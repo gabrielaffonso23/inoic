@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class Tab2Page {
 
   constructor() {}
-
+  customCounterFormatter(inputLength: number, maxLength: number) {
+    return `${maxLength - inputLength} characters remaining`;
+  }
 }
+
+
